@@ -14,7 +14,7 @@
             <![CDATA[Diese Mod fügt ein modifiziertes Standardheulager hinzu, in dem zusätzlich noch Gras und Silage gelagert werden können.]]>
         </de>
     </description>
-    <iconFilename>$data/placeables/lizard/hayLoft/store_hayLoft.dds</iconFilename>
+    <iconFilename>store_hayLoft.dds</iconFilename>
     <multiplayer supported="true" />
 	    
     <storeItems>
