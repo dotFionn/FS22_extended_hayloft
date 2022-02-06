@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="61">
+    <author>dotFionn</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Extended Hayloft</en>
+		<de>Erweitertes Heulager</de>
+    </title>
+    <description>
+        <en>
+            <![CDATA[This mods adds a modified default hayloft that also supports storing grass and silage.]]>
+        </en>
+        <de>
+            <![CDATA[Diese Mod fügt ein modifiziertes Standardheulager hinzu, in dem zusätzlich noch Gras und Silage gelagert werden können.]]>
+        </de>
+    </description>
+    <iconFilename>$data/placeables/lizard/hayLoft/store_hayLoft.dds</iconFilename>
+    <multiplayer supported="true" />
+	    
+    <storeItems>
+        <storeItem xmlFilename="hayLoft.xml"/>
+    </storeItems>
+	
+	<l10n>
+		<text name="extended_hayloft_label">
+            <en>Extended Hayloft</en>
+            <de>Erweitertes Heulager</de>
+        </text>
+		<text name="extended_hayloft_function">
+            <en>Store hay, grass, straw and silage</en>
+            <de>Lagermöglichkeit für Heu, Gras, Stroh und Silage</de>
+        </text>
+	</l10n>
+</modDesc>

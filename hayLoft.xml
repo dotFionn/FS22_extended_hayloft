@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_shopItem_hayLoft</name>
+        <name>$l10n_extended_hayloft_label</name>
         <functions>
-            <function>$l10n_function_hayStorage</function>
+            <function>$l10n_extended_hayloft_function</function>
         </functions>
         <image>$data/placeables/lizard/hayLoft/store_hayLoft.png</image>
-        <price>63500</price>
+        <price>100000</price>
         <lifetime>1000</lifetime>
         <dailyUpkeep>40</dailyUpkeep>
         <rotation>0</rotation>
-        <brand>NONE</brand>
+        <brand>LIZARD</brand>
         <species>placeable</species>
         <category>storages</category>
         <brush>
@@ -76,21 +76,21 @@
 
     <silo>
         <loadingStation supportsExtension="false" >
-            <loadTrigger triggerNode="loadingTrigger" fillTypeCategories="hayloft" fillLitersPerSecond="2000" dischargeNode="dischargeNode" aiNode="aiNodeLoading">
+            <loadTrigger triggerNode="loadingTrigger" fillTypes="STRAW DRYGRASS_WINDROW GRASS_WINDROW SILAGE" fillLitersPerSecond="2000" dischargeNode="dischargeNode" aiNode="aiNodeLoading">
                 <effectNode effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" scale="1 1 1" />
                 <effectNode effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
             </loadTrigger>
         </loadingStation>
 
         <unloadingStation supportsExtension="false" >
-            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="hayloft" aiNode="aiNodeUnlading"/>
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="STRAW DRYGRASS_WINDROW GRASS_WINDROW SILAGE" aiNode="aiNodeUnlading"/>
         <sounds>
             <active template="hayloftPump" linkNode="fanSoundNode"/>
         </sounds>
         </unloadingStation>
 
         <storages>
-            <storage node="hotspotMarker" fillTypeCategories="hayloft" capacity="250000" isExtension="false"/>
+            <storage node="hotspotMarker" fillTypes="STRAW DRYGRASS_WINDROW GRASS_WINDROW SILAGE" capacity="5000000" isExtension="false"/>
         </storages>
     </silo>
 
